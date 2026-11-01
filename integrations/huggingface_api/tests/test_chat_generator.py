@@ -1676,3 +1676,36 @@ class TestReasoning:
             assert reply.reasoning is not None
             assert isinstance(reply.reasoning, ReasoningContent)
             assert reply.reasoning.reasoning_text == "Thinking..."
+
+
+class TestEmptyToolsOverride:
+    def test_run_empty_tools_list_overrides_init_tools(
+        self, mock_check_valid_model, mock_chat_completion, chat_messages, tools
+    ):
+        generator = HuggingFaceAPIChatGenerator(
+            api_type=HFGenerationAPIType.SERVERLESS_INFERENCE_API,
+            api_params={"model": "meta-llama/Llama-2-13b-chat-hf"},
+            tools=tools,
+        )
+
+        generator.run(messages=chat_messages, tools=[])
+
+        # an empty list must disable tools for this call, not fall back to the init tools
+        _, kwargs = mock_chat_completion.call_args
+        assert kwargs["tools"] is None
+
+    @pytest.mark.asyncio
+    async def test_run_async_empty_tools_list_overrides_init_tools(
+        self, mock_check_valid_model, mock_chat_completion_async, chat_messages, tools
+    ):
+        generator = HuggingFaceAPIChatGenerator(
+            api_type=HFGenerationAPIType.SERVERLESS_INFERENCE_API,
+            api_params={"model": "meta-llama/Llama-2-13b-chat-hf"},
+            tools=tools,
+        )
+
+        await generator.run_async(messages=chat_messages, tools=[])
+
+        # an empty list must disable tools for this call, not fall back to the init tools
+        _, kwargs = mock_chat_completion_async.call_args
+        assert kwargs["tools"] is None
