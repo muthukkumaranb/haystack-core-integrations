@@ -1,0 +1,42 @@
+# Repository Coverage (arcadedb-combined)
+
+[Full report](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-arcadedb-combined/htmlcov/index.html)
+
+| Name                                                                              |    Stmts |     Miss |   Branch |   BrPart |   Cover |   Missing |
+|---------------------------------------------------------------------------------- | -------: | -------: | -------: | -------: | ------: | --------: |
+| src/haystack\_integrations/components/retrievers/arcadedb/embedding\_retriever.py |       33 |        2 |        8 |        4 |     85% |94, 96, 142-\>144, 144-\>146 |
+| src/haystack\_integrations/document\_stores/arcadedb/converters.py                |       14 |        0 |        4 |        0 |    100% |           |
+| src/haystack\_integrations/document\_stores/arcadedb/document\_store.py           |      368 |       49 |      146 |       16 |     85% |154, 252, 338-\>331, 346-\>329, 376-380, 410, 424-\>426, 432-442, 465-466, 472-474, 494-496, 519-524, 540-\>543, 545, 573-\>575, 594-\>597, 624, 648-675 |
+| src/haystack\_integrations/document\_stores/arcadedb/filters.py                   |       89 |        0 |       56 |        0 |    100% |           |
+| **TOTAL**                                                                         |  **504** |   **51** |  **214** |   **20** | **89%** |           |
+
+
+## Setup coverage badge
+
+Below are examples of the badges you can use in your main branch `README` file.
+
+### Direct image
+
+[![Coverage badge](https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-arcadedb-combined/badge.svg)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-arcadedb-combined/htmlcov/index.html)
+
+This is the one to use if your repository is private or if you don't want to customize anything.
+
+### [Shields.io](https://shields.io) Json Endpoint
+
+[![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-arcadedb-combined/endpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-arcadedb-combined/htmlcov/index.html)
+
+Using this one will allow you to [customize](https://shields.io/endpoint) the look of your badge.
+It won't work with private repositories. It won't be refreshed more than once per five minutes.
+
+### [Shields.io](https://shields.io) Dynamic Badge
+
+[![Coverage badge](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=coverage&query=%24.message&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmuthukkumaranb%2Fhaystack-core-integrations%2Fpython-coverage-comment-action-data-arcadedb-combined%2Fendpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-arcadedb-combined/htmlcov/index.html)
+
+This one will always be the same color. It won't work for private repos. I'm not even sure why we included it.
+
+## What is that?
+
+This branch is part of the
+[python-coverage-comment-action](https://github.com/marketplace/actions/python-coverage-comment)
+GitHub Action. All the files in this branch are automatically generated and may be
+overwritten at any moment.
