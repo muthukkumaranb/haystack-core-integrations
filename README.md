@@ -1,0 +1,44 @@
+# Repository Coverage (supabase)
+
+[Full report](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-supabase/htmlcov/index.html)
+
+| Name                                                                                       |    Stmts |     Miss |   Branch |   BrPart |   Cover |   Missing |
+|------------------------------------------------------------------------------------------- | -------: | -------: | -------: | -------: | ------: | --------: |
+| src/haystack\_integrations/components/downloaders/supabase/supabase\_bucket\_downloader.py |       45 |        2 |       12 |        2 |     93% |75-76, 90-\>92 |
+| src/haystack\_integrations/components/retrievers/supabase/embedding\_retriever.py          |       23 |        0 |        4 |        0 |    100% |           |
+| src/haystack\_integrations/components/retrievers/supabase/groonga\_bm25\_retriever.py      |       60 |        0 |       14 |        1 |     99% | 181-\>183 |
+| src/haystack\_integrations/components/retrievers/supabase/keyword\_retriever.py            |       23 |        0 |        4 |        0 |    100% |           |
+| src/haystack\_integrations/document\_stores/supabase/document\_store.py                    |       12 |        0 |        0 |        0 |    100% |           |
+| src/haystack\_integrations/document\_stores/supabase/groonga\_document\_store.py           |      410 |      219 |      200 |       28 |     42% |108-109, 112, 143-144, 147, 172-176, 210-211, 241, 258, 261-262, 264, 271, 288, 293-352, 359-360, 363-364, 375-422, 437-438, 440-442, 445-446, 451-478, 493-494, 496-498, 503-532, 541-545, 554-558, 570-587, 597-610, 616-619, 625-626, 638-639, 678-679, 691, 709-721, 758, 770, 788 |
+| **TOTAL**                                                                                  |  **573** |  **221** |  **234** |   **31** | **56%** |           |
+
+
+## Setup coverage badge
+
+Below are examples of the badges you can use in your main branch `README` file.
+
+### Direct image
+
+[![Coverage badge](https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-supabase/badge.svg)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-supabase/htmlcov/index.html)
+
+This is the one to use if your repository is private or if you don't want to customize anything.
+
+### [Shields.io](https://shields.io) Json Endpoint
+
+[![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-supabase/endpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-supabase/htmlcov/index.html)
+
+Using this one will allow you to [customize](https://shields.io/endpoint) the look of your badge.
+It won't work with private repositories. It won't be refreshed more than once per five minutes.
+
+### [Shields.io](https://shields.io) Dynamic Badge
+
+[![Coverage badge](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=coverage&query=%24.message&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmuthukkumaranb%2Fhaystack-core-integrations%2Fpython-coverage-comment-action-data-supabase%2Fendpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-supabase/htmlcov/index.html)
+
+This one will always be the same color. It won't work for private repos. I'm not even sure why we included it.
+
+## What is that?
+
+This branch is part of the
+[python-coverage-comment-action](https://github.com/marketplace/actions/python-coverage-comment)
+GitHub Action. All the files in this branch are automatically generated and may be
+overwritten at any moment.
