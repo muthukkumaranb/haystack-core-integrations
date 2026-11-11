@@ -1,0 +1,47 @@
+# Repository Coverage (google_genai-combined)
+
+[Full report](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-google_genai-combined/htmlcov/index.html)
+
+| Name                                                                                                 |    Stmts |     Miss |   Branch |   BrPart |   Cover |   Missing |
+|----------------------------------------------------------------------------------------------------- | -------: | -------: | -------: | -------: | ------: | --------: |
+| src/haystack\_integrations/common/google\_genai/utils.py                                             |       38 |        0 |       20 |        2 |     97% |16-\>exit, 29-\>exit |
+| src/haystack\_integrations/components/embedders/google\_genai/document\_embedder.py                  |      118 |        6 |       38 |        5 |     93% |251, 261, 284, 294, 352-356 |
+| src/haystack\_integrations/components/embedders/google\_genai/multimodal\_document\_embedder.py      |      176 |        8 |       64 |        7 |     94% |392-393, 415, 436-\>409, 459, 469-470, 473-478, 480-\>453 |
+| src/haystack\_integrations/components/embedders/google\_genai/text\_embedder.py                      |       64 |        8 |       12 |        1 |     88% |207, 232-233, 251-256 |
+| src/haystack\_integrations/components/generators/google\_genai/chat/chat\_generator.py               |      188 |        2 |       46 |        3 |     98% |430-\>432, 635, 639 |
+| src/haystack\_integrations/components/generators/google\_genai/chat/interactions\_chat\_generator.py |      124 |        0 |       28 |        3 |     98% |219-\>exit, 225-\>exit, 407-\>400 |
+| src/haystack\_integrations/components/generators/google\_genai/chat/interactions\_utils.py           |      255 |        6 |      134 |        7 |     97% |217-221, 230-231, 236-\>234, 246-247, 554-\>557, 566-\>568, 568-\>570 |
+| src/haystack\_integrations/components/generators/google\_genai/chat/utils.py                         |      318 |       24 |      186 |       22 |     90% |234-235, 279-281, 289-\>298, 317-\>322, 361-363, 432-\>322, 495, 505-507, 545-\>579, 548-\>579, 553, 563-\>565, 566-571, 575-576, 592, 605, 616, 621-622, 710-\>681, 783-\>789, 789-\>775, 799, 805 |
+| src/haystack\_integrations/token\_counters/google\_genai/token\_counter.py                           |       58 |        3 |       18 |        3 |     92% |92, 146-147, 156-\>exit |
+| **TOTAL**                                                                                            | **1339** |   **57** |  **546** |   **53** | **94%** |           |
+
+
+## Setup coverage badge
+
+Below are examples of the badges you can use in your main branch `README` file.
+
+### Direct image
+
+[![Coverage badge](https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-google_genai-combined/badge.svg)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-google_genai-combined/htmlcov/index.html)
+
+This is the one to use if your repository is private or if you don't want to customize anything.
+
+### [Shields.io](https://shields.io) Json Endpoint
+
+[![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/muthukkumaranb/haystack-core-integrations/python-coverage-comment-action-data-google_genai-combined/endpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-google_genai-combined/htmlcov/index.html)
+
+Using this one will allow you to [customize](https://shields.io/endpoint) the look of your badge.
+It won't work with private repositories. It won't be refreshed more than once per five minutes.
+
+### [Shields.io](https://shields.io) Dynamic Badge
+
+[![Coverage badge](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=coverage&query=%24.message&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmuthukkumaranb%2Fhaystack-core-integrations%2Fpython-coverage-comment-action-data-google_genai-combined%2Fendpoint.json)](https://htmlpreview.github.io/?https://github.com/muthukkumaranb/haystack-core-integrations/blob/python-coverage-comment-action-data-google_genai-combined/htmlcov/index.html)
+
+This one will always be the same color. It won't work for private repos. I'm not even sure why we included it.
+
+## What is that?
+
+This branch is part of the
+[python-coverage-comment-action](https://github.com/marketplace/actions/python-coverage-comment)
+GitHub Action. All the files in this branch are automatically generated and may be
+overwritten at any moment.
